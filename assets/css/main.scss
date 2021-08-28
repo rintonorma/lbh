@@ -17,6 +17,10 @@ hr {
   background-size: cover;
   height: 100vh;
 }
+.bg-auth{
+  background: url(~/static/img/bg.png) no-repeat;
+  background-position: top center;
+}
 .card, .btn{
   border-radius: 10px;
   border: 1px solid #D6DBD5;
