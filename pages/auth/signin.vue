@@ -9,15 +9,13 @@
                 <div class="text-center mb-4">
                   <img src="~/static/img/logo.png">
                 </div>
-                <h4 class="text-center mb-4">Lembaga Bantuan Hukum Himpunan Kerukunan Tani Indonesia</h4>
-                <h5 class="text-center mb-4">Sudah punya akun? <nuxt-link to="" class="text-danger">Masuk</nuxt-link></h5>
+                <h5 class="text-center mb-4">Belum punya akun? <nuxt-link to="" class="text-danger">Buat akun</nuxt-link></h5>
                 <form>
                   <label for="input-email" class="text-secondary">Email</label>
                   <div class="input-group mb-3">
                     <input type="email" class="form-control form-control-lg" id="input-email" aria-describedby="input-email" placeholder="nama@email.com">
                   </div>
-                  <div class="text-center mb-4"><small>Dengan mendaftar, saya menyatakan bahwa saya setuju dengan <nuxt-link to="" class="text-danger">Ketentuan Layanan</nuxt-link> dan <nuxt-link to="" class="text-danger">Kebijakan Privasi</nuxt-link></small></div>
-                  <nuxt-link to="" class="btn btn-success btn-lg btn-block">Selanjutnya</nuxt-link>
+                  <nuxt-link to="" class="btn btn-success btn-lg btn-block">Masuk</nuxt-link>
                 </form>
               </div>
             </div>
@@ -31,9 +29,10 @@
 
 <script>
 import AuthFooter from '~/components/auth/authFooter'
+
 export default {
 
-  name: 'signup',
+  name: 'signin',
 
   components:{
     AuthFooter,
