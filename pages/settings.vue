@@ -7,17 +7,11 @@
           <div class="col-12 col-lg-8">
             <div class="card">
               <div class="card-body">
-                <h5 class="mb-3">Berikan Laporan</h5>
-                <FormReport />
-              </div>
-            </div>
-            <div class="main-content py-4">
-              <div class="card mb-4">
-                <div class="card-body text-center">
-                  Anda belum memberikan laporan dan mendapatkan jawaban. Silahkan berikan laporan anda pada kolom laporan.
+                <div class="d-flex align-items-center justify-content-between">
+                  <h5 class="mb-0">Pengaturan</h5>
                 </div>
+                asdasdsa
               </div>
-              <Thread />
             </div>
           </div>
           <div class="col-12 col-lg-4">
@@ -33,24 +27,14 @@
 </template>
 
 <script>
-import MainHeader from '~/components/mainHeader'
-import FormReport from '~/components/formReport'
-import Thread from '~/components/thread'
-import Navbar from '~/components/navbar'
-import MainFooter from '~/components/mainFooter'
 import ProfileBar from '~/components/profileBar'
 import { Icon } from '@iconify/vue2'
 
 export default {
 
-  name: 'index',
+  name: 'settings',
 
   components:{
-    MainHeader,
-    MainFooter,
-    FormReport,
-    Thread,
-    Navbar,
     ProfileBar,
     Icon
   },
@@ -63,6 +47,5 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="css" scoped>
 </style>

@@ -2,19 +2,19 @@
   <div>
     <ul>
       <li>
-        <nuxt-link to="" class="d-flex align-items-center gap-2">
+        <nuxt-link to="/inbox" class="d-flex align-items-center gap-2">
           <Icon icon="bx:bxs-inbox" style="font-size: 18px;" class=""/>
           <span>Kotak Masuk</span>
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="" class="d-flex align-items-center gap-2 active">
+        <nuxt-link to="/sent" class="d-flex align-items-center gap-2 active">
           <Icon icon="bx:bxs-send" style="font-size: 18px;" class=""/>
           <span>Laporan Terkirim</span>
         </nuxt-link>
       </li>
       <li>
-        <nuxt-link to="" class="d-flex align-items-center gap-2">
+        <nuxt-link to="/draft" class="d-flex align-items-center gap-2">
           <Icon icon="bi:file-earmark-fill" style="font-size: 18px;" class=""/>
           <span>Draf</span>
         </nuxt-link>
