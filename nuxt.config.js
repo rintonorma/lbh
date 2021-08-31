@@ -21,10 +21,6 @@ export default {
     script: [
       { src: '/js/jquery-3.5.1.min.js' },
       { src: '/js/bootstrap.bundle.min.js' },
-      // { src: '/js/slick.min.js' },
-      // { src: '/js/select2.min.js' },
-      // { src: '/js/venobox.min.js' },
-      // { src: '/js/main.js' }
     ]
   },
 
@@ -48,6 +44,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
+    'nuxt-sweetalert2',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

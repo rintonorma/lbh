@@ -37,10 +37,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- <label for="input-city" class="text-secondary">Kota/Kabupaten</label>
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control form-control-lg" id="input-city" aria-describedby="input-city" placeholder="Kota/Kabupaten">
-                  </div> -->
                   <label for="input-city" class="text-secondary">Kota/Kabupaten</label>
                   <div class="input-group mb-3">
                     <Select2 v-model="valueCity" :options="inputCity" :settings="{ width: '100%' }" @change="myChangeEvent($event)" @select="mySelectEvent($event)" placeholder="Pilih Kota/Kabupaten" id="input-city" class="form-control form-control-lg p-0 py-2"/>

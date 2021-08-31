@@ -47,10 +47,6 @@
                           </div>
                         </div>
                       </div>
-                      <!-- <label for="input-city" class="text-secondary">Kota/Kabupaten</label>
-                      <div class="input-group mb-3">
-                        <input type="text" class="form-control form-control-lg" id="input-city" aria-describedby="input-city" placeholder="Kota/Kabupaten">
-                      </div> -->
                       <label for="input-city" class="text-secondary">Kota/Kabupaten</label>
                       <div class="input-group mb-3">
                         <Select2 v-model="valueCity" :options="inputCity" :settings="{ width: '100%' }" @change="myChangeEvent($event)" @select="mySelectEvent($event)" placeholder="Pilih Kota/Kabupaten" id="input-city" class="form-control form-control-lg p-0 py-2"/>
@@ -63,14 +59,14 @@
                         </div>
                       </div>
                       <div class="d-flex align-items-center justify-content-end gap-2">
-                        <nuxt-link to="" class="btn btn-light text-dark btn-lg px-5">Batal</nuxt-link>
+                        <nuxt-link to="" class="btn btn-light text-dark btn-lg px-5">Batalkan</nuxt-link>
                         <nuxt-link to="" class="btn btn-success btn-lg px-5">Simpan</nuxt-link>
                       </div>
                     </form>
                   </div>
                   <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                     <ul>
-                      <li><nuxt-link to="" class="btn btn-transparent border-0 text-start btn-lg btn-block">Ubah email</nuxt-link></li>
+                      <li><nuxt-link to="/changeEmail" class="btn btn-transparent border-0 text-start btn-lg btn-block">Ubah email</nuxt-link></li>
                       <li><nuxt-link to="" class="btn btn-transparent border-0 text-start btn-lg btn-block">Hapus akun</nuxt-link></li>
                       <li><nuxt-link to="" class="btn btn-transparent border-0 text-start text-danger btn-lg btn-block">Keluar</nuxt-link></li>
                     </ul>
