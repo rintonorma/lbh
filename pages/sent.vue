@@ -30,12 +30,7 @@
               <Thread />
             </div>
           </div>
-          <div class="col-12 col-lg-4">
-            <ProfileBar />
-            <nuxt-link to="" class="btn btn-light btn-block my-3">3 Laporan</nuxt-link>
-            <Navbar />
-            <MainFooter />
-          </div>
+          <Sidebar />
         </div>
       </div>
     </section>
@@ -43,7 +38,7 @@
 </template>
 
 <script>
-import ProfileBar from '~/components/profileBar'
+import Sidebar from '~/components/sidebar'
 import { Icon } from '@iconify/vue2'
 
 export default {
@@ -51,7 +46,7 @@ export default {
   name: 'sent',
 
   components:{
-    ProfileBar,
+    Sidebar,
     Icon
   },
 

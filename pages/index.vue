@@ -20,12 +20,7 @@
               <Thread />
             </div>
           </div>
-          <div class="col-12 col-lg-4">
-            <ProfileBar />
-            <nuxt-link to="" class="btn btn-light btn-block my-3">3 Laporan</nuxt-link>
-            <Navbar />
-            <MainFooter />
-          </div>
+          <Sidebar />
         </div>
       </div>
     </section>
@@ -36,9 +31,7 @@
 import MainHeader from '~/components/mainHeader'
 import FormReport from '~/components/formReport'
 import Thread from '~/components/thread'
-import Navbar from '~/components/navbar'
-import MainFooter from '~/components/mainFooter'
-import ProfileBar from '~/components/profileBar'
+import Sidebar from '~/components/sidebar'
 import { Icon } from '@iconify/vue2'
 
 export default {
@@ -47,11 +40,9 @@ export default {
 
   components:{
     MainHeader,
-    MainFooter,
     FormReport,
     Thread,
-    Navbar,
-    ProfileBar,
+    Sidebar,
     Icon
   },
 

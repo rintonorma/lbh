@@ -11,7 +11,11 @@ hr {
   border: 0;
   border-top: 0px solid #D6DBD5;
 }
-
+.form-control::-webkit-input-placeholder { color: #ADB5BD; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #ADB5BD; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: #ADB5BD; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #ADB5BD; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: #ADB5BD; }  /* Microsoft Edge */
 .bg-dashboard{
   background: url(~/static/img/bg-dashboard.png) no-repeat;
   background-position: top center;

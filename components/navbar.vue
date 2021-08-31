@@ -1,5 +1,6 @@
 <template>
   <div>
+    <nuxt-link to="" class="btn btn-light btn-block my-3">3 Laporan</nuxt-link>
     <ul>
       <li>
         <nuxt-link to="/inbox" class="d-flex align-items-center gap-2">
