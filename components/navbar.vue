@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nuxt-link to="" class="btn btn-light btn-block my-3">3 Laporan</nuxt-link>
+    <nuxt-link to="" class="btn btn-light btn-block my-3 btnReport">3 Laporan</nuxt-link>
     <ul>
       <li>
         <nuxt-link to="/inbox" class="d-flex align-items-center gap-2">
@@ -18,6 +18,18 @@
         <nuxt-link to="/draft" class="d-flex align-items-center gap-2">
           <Icon icon="bi:file-earmark-fill" style="font-size: 18px;" class=""/>
           <span>Draf</span>
+        </nuxt-link>
+      </li>
+      <li class="d-block d-lg-none">
+        <nuxt-link to="/settings" class="d-flex align-items-center gap-2">
+          <Icon icon="ci:settings-filled" style="font-size: 18px;" class=""/>
+          <span>Pengaturan</span>
+        </nuxt-link>
+      </li>
+      <li class="d-block d-lg-none">
+        <nuxt-link to="/" class="d-flex align-items-center gap-2">
+          <Icon icon="uis:signout" style="font-size: 18px;" class=""/>
+          <span>Keluar</span>
         </nuxt-link>
       </li>
     </ul>
@@ -68,6 +80,20 @@ ul{
     .active{
       background: #CCE5B2;
       color: #DF0714;
+    }
+  }
+}
+
+@media (max-width: 767px){
+  .btnReport{
+    margin-top: 0!important;
+    border-radius: 0;
+  }
+  ul{
+    li{
+      a{
+        border-radius: 0;
+      }
     }
   }
 }

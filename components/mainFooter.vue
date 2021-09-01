@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row menuBar">
     <div class="col-12 col-lg-6">
       <ul>
         <li>
@@ -71,5 +71,9 @@ a{
     text-decoration: none;
     color: #6C757D;
   }
+}
+.menuBar{
+  font-size: 14px;
+  margin: 0;
 }
 </style>

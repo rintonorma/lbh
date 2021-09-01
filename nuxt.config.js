@@ -21,6 +21,7 @@ export default {
     script: [
       { src: '/js/jquery-3.5.1.min.js' },
       { src: '/js/bootstrap.bundle.min.js' },
+      { src: '/js/main.js' },
     ]
   },
 

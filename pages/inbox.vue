@@ -1,10 +1,10 @@
 <template>
   <div>
-    <MainHeader />
+    <MainHeader @sidebar="openSidebar"/>
     <section class="bg-dashboard">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-8">
+          <div class="col-12 col-lg-8" id="main">
             <div class="card">
               <div class="card-body">
                 <div class="d-flex align-items-center justify-content-between">
@@ -30,7 +30,7 @@
               <Thread />
             </div>
           </div>
-          <Sidebar />
+          <Sidebar :open="open" @sidebar="openSidebar" />
         </div>
       </div>
     </section>
@@ -52,7 +52,13 @@ export default {
 
   data () {
     return {
+      open: false
+    }
+  },
 
+  methods: {
+    openSidebar() {
+      this.open = ! this.open
     }
   }
 }

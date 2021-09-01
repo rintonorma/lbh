@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex align-items-center gap-2">
+  <div class="d-flex align-items-center gap-2 profileBar">
     <div class="position-relative">
       <div class="avatar avatar-xl">
         <img src="~/static/img/photo-1519993796861-26556330a4a9.jpeg">

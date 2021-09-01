@@ -18,7 +18,7 @@
               <button class="btn btn-outline-secondary border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <Icon icon="octicon:kebab-horizontal-24" style="font-size: 24px;"/>
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">Hapus</a>
               </div>
             </div>
@@ -69,7 +69,7 @@
               <button class="btn btn-outline-secondary border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <Icon icon="octicon:kebab-horizontal-24" style="font-size: 24px;"/>
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">Hapus</a>
               </div>
             </div>
@@ -117,7 +117,7 @@
               <button class="btn btn-outline-secondary border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <Icon icon="octicon:kebab-horizontal-24" style="font-size: 24px;"/>
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#">Laporkan</a>
               </div>
             </div>

@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="bg-auth p-4">
+    <div class="bg-auth p-lg-4">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-lg-4 offset-lg-4">
+          <div class="col-12 col-lg-4 offset-lg-4" id="main">
             <div class="card">
-              <div class="card-body p-5">
+              <div class="card-body p-lg-5">
                 <div class="position-relative mb-4">
-                  <!-- <nuxt-link to="" class="text-secondary position-absolute start-0"><Icon icon="eva:arrow-back-outline" style="font-size: 24px;"/></nuxt-link> -->
-                  <h4 class="m-0 w-100 text-center">Lengkapi Data Diri</h4>
+                  <nuxt-link to="" class="text-secondary position-absolute start-0 d-block d-lg-none"><Icon icon="eva:arrow-back-outline" style="font-size: 24px;"/></nuxt-link>
+                  <h5 class="m-0 w-100 text-center">Lengkapi Data Diri</h5>
                 </div>
                 <form>
                   <label for="input-name" class="text-secondary">Nama Lengkap</label>
@@ -48,7 +48,7 @@
                       <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Pilih berkas</label>
                     </div>
                   </div>
-                  <nuxt-link to="" class="btn btn-success btn-lg btn-block">Selesai</nuxt-link>
+                  <nuxt-link to="/" class="btn btn-success btn-lg btn-block">Selesai</nuxt-link>
                 </form>
               </div>
             </div>

@@ -1,10 +1,10 @@
 <template>
   <div>
-    <MainHeader />
+    <MainHeader @sidebar="openSidebar"/>
     <section class="bg-dashboard">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-8">
+          <div class="col-12 col-lg-8" id="main">
             <div class="card">
               <div class="card-body">
                 <div class="d-flex align-items-center justify-content-between">
@@ -59,8 +59,8 @@
                         </div>
                       </div>
                       <div class="d-flex align-items-center justify-content-end gap-2">
-                        <nuxt-link to="" class="btn btn-light text-dark btn-lg px-5">Batalkan</nuxt-link>
-                        <nuxt-link to="" class="btn btn-success btn-lg px-5">Simpan</nuxt-link>
+                        <nuxt-link to="" class="btn btn-light text-dark btn-lg px-lg-5">Batalkan</nuxt-link>
+                        <nuxt-link to="" class="btn btn-success btn-lg px-lg-5">Simpan</nuxt-link>
                       </div>
                     </form>
                   </div>
@@ -75,7 +75,7 @@
               </div>
             </div>
           </div>
-          <Sidebar />
+          <Sidebar :open="open" @sidebar="openSidebar" />
         </div>
       </div>
     </section>
@@ -104,17 +104,21 @@ export default {
       valueKec: '',
       inputKec: ['kecamatan1', 'kecamatan2', 'kecamatan3'],
       valueCity: '',
-      inputCity: ['kota1', 'kota2', 'kota3']
+      inputCity: ['kota1', 'kota2', 'kota3'],
+      open: false
     }
   },
 
   methods: {
-      myChangeEvent(val){
-          console.log(val);
-      },
-      mySelectEvent({id, text}){
-          console.log({id, text})
-      }
+    myChangeEvent(val){
+      console.log(val);
+    },
+    mySelectEvent({id, text}){
+      console.log({id, text})
+    },
+    openSidebar() {
+      this.open = ! this.open 
+    }
   }
 }
 </script>
