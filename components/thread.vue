@@ -131,14 +131,14 @@
         <div class="ratio ratio-16x9 my-3">
           <img src="~/static/img/agriculture-asia-china-235648.jpg" class="rounded">
         </div>
-        <div class="d-flex align-items-center justify-content-end gap-2">
+        <a class="d-flex align-items-center justify-content-end gap-2" @click="reply = true">
           <Icon icon="bi:reply-fill" style="font-size: 24px;" class="text-secondary"/>
-          <div>Balas Jawaban</div>
-        </div>
+          <div class="text-dark">Balas Jawaban</div>
+        </a>
       </div>
       <div class="divider"></div>
       <div class="card-footer bg-transparent border-0">
-        <FormReport />
+        <FormReply id="formReply" :reply="reply" @reply="openReply"/>
       </div>
     </div>
 
@@ -149,6 +149,7 @@
 <script>
 import { Icon } from '@iconify/vue2'
 import FormReport from '~/components/formReport'
+import FormReply from '~/components/formReply'
 
 export default {
 
@@ -156,13 +157,20 @@ export default {
 
   components:{
     Icon,
-    FormReport
+    FormReport,
+    FormReply
   },
 
   data () {
     return {
+      reply: false,
+    } 
+  },
 
-    }
+  methods: {
+    openReply() {
+      this.reply = ! this.reply
+    },
   }
 }
 </script>

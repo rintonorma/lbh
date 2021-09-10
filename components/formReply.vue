@@ -1,5 +1,9 @@
 <template>
-  <div>
+  <div id="formReply" :class="{ 'open': reply }">
+    <div class="position-relative mb-4 d-block d-lg-none">
+      <a class="text-secondary position-absolute start-0" @click="closeReply()"><Icon icon="eva:arrow-back-outline" style="font-size: 24px;"/></a>
+      <h5 class="m-0 w-100 text-center">Berikan Jawaban</h5>
+    </div>
     <div class="card p-0 p-lg-3 mb-3">
       <b-form-textarea id="textarea" v-model="text" placeholder="Tulis disini..." rows="3" max-rows="6" class="mb-3 border-0 p-0 bg-transparent"></b-form-textarea>
       <div class="d-grid gap-2 fileUpload">
@@ -44,7 +48,11 @@ import { Icon } from '@iconify/vue2';
 
 export default {
 
-  name: 'formReport',
+  name: 'formReply',
+
+  props: {
+    reply: Boolean
+  },
 
   components:{
     Icon,
@@ -54,6 +62,13 @@ export default {
     return {
       text: ''
     } 
+  },
+
+  methods: {
+    closeReply() {
+      // console.log('clicked')
+      this.$emit('reply')
+    }
   }
 }
 </script>

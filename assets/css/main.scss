@@ -142,7 +142,7 @@ hr {
   }
 }
 .main-content{
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
 }
 
 .sidebar-overlay {
@@ -157,6 +157,9 @@ hr {
 @media (max-width: 767px){
   section{
     padding: 0;
+  }
+  .bg-dashboard{
+    background: #F8F9FA;
   }
   .card{
     border-radius: 0;
@@ -218,6 +221,27 @@ hr {
   }
   #formReport.open{
     right: 0;
+  }
+  #formReply{
+    position: fixed;
+    z-index: 1109;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    right: -100%;
+    transition: .5s ease;
+    background: #fff;
+    padding: 20px;
+  }
+  #formReply.open{
+    right: 0;
+  }
+  #textarea{
+    height: calc(100vh - 160px)!important;
+  }
+  .fileUpload{
+    position: absolute;
+    bottom: 0;
   }
   .profileBar{
     flex-direction: column;

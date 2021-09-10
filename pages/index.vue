@@ -16,6 +16,7 @@
                 <FormReport />
               </div>
             </div>
+            <a class="btn btn-light shadow rounded-pill position-fixed bottom-0 end-0 m-2 d-flex align-items-center gap-2 px-4 py-3 border-0 d-block d-lg-none" @click="report = true" style="z-index: 11;"><Icon icon="fluent:compose-16-filled" style="font-size: 24px;" class=""/><span>Berikan Laporan</span></a>
             <div class="main-content py-lg-4">
               <div class="card mb-4">
                 <div class="card-body text-center">
@@ -24,7 +25,6 @@
               </div>
               <Thread />
             </div>
-            <a class="btn btn-light shadow rounded-pill position-fixed bottom-0 end-0 m-2 d-flex align-items-center gap-2 px-4 py-3 border-0 d-block d-lg-none" @click="report = true"><Icon icon="fluent:compose-16-filled" style="font-size: 24px;" class=""/><span>Berikan Laporan</span></a>
           </div>
           <Sidebar :open="open" @sidebar="openSidebar" />
         </div>
